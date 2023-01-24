@@ -1,6 +1,6 @@
 .header { position: absolute; top: 0; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; padding-top: 30px; width: 1110px; z-index: 10; }
 
-.header .logo a { display: block; width: 76px; height: 24px; background: url("/assets/img/logo.svg") no-repeat center/100% auto; }
+.header .logo a { display: block; width: 76px; height: 24px; background: url("../img/logo.svg") no-repeat center/100% auto; }
 
 .header .nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -10,7 +10,7 @@
 
 .sec_kv { overflow: hidden; position: relative; display: -webkit-box; display: -ms-flexbox; display: flex; height: 987px; }
 
-.sec_kv::before { content: ''; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: block; width: 100%; height: 100%; background: url("/assets/img/kv_bg.jpg") no-repeat center/cover; }
+.sec_kv::before { content: ''; position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); display: block; width: 100%; height: 100%; background: url("../img/kv_bg.jpg") no-repeat center/cover; }
 
 .sec_kv .inner { position: relative; z-index: 1; }
 
@@ -30,9 +30,9 @@
 
 .sec_kv .txt_con .btn_con li a { overflow: hidden; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 241px; height: 85px; background-color: #22193a; background-repeat: no-repeat; background-size: 100% auto; border-radius: 20px; }
 
-.sec_kv .txt_con .btn_con li.appStore a { background-image: url("/assets/img/btn_appstore.png"); }
+.sec_kv .txt_con .btn_con li.appStore a { background-image: url("../img/btn_appstore.png"); }
 
-.sec_kv .txt_con .btn_con li.playStore a { background-image: url("/assets/img/btn_playstore.png"); }
+.sec_kv .txt_con .btn_con li.playStore a { background-image: url("../img/btn_playstore.png"); }
 
 .sec_kv .img_con { position: absolute; top: 50%; right: -4.1%; width: 60%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%); }
 
@@ -146,11 +146,11 @@
 
 .footer .sns_link li a { display: inline-block; width: 32px; height: 32px; background-repeat: no-repeat; background-size: 100% auto; background-position: center; }
 
-.footer .sns_link li:nth-child(1) a { background-image: url("/assets/img/ico_instagram.png"); }
+.footer .sns_link li:nth-child(1) a { background-image: url("../img/ico_instagram.png"); }
 
-.footer .sns_link li:nth-child(2) a { background-image: url("/assets/img/ico_blog.png"); }
+.footer .sns_link li:nth-child(2) a { background-image: url("../img/ico_blog.png"); }
 
-.footer .sns_link li:nth-child(3) a { width: 35px; background-image: url("/assets/img/ico_youtube.png"); }
+.footer .sns_link li:nth-child(3) a { width: 35px; background-image: url("../img/ico_youtube.png"); }
 
 .motion { opacity: 0 !important; -webkit-transform: translate(0, 20%) !important; -ms-transform: translate(0, 20%) !important; transform: translate(0, 20%) !important; -webkit-transition: all 1s ease-in-out; transition: all 1s ease-in-out; }
 
@@ -190,7 +190,7 @@
 	.header .nav li + li { margin-left: 6.94vw; }
 	.header .nav li a { font-size: 3.89vw; }
 	.sec_kv { height: 207.22vw; }
-	.sec_kv::before { background-image: url("/assets/img/mo_kv_bg.jpg"); }
+	.sec_kv::before { background-image: url("../img/mo_kv_bg.jpg"); }
 	.sec_kv .txt_con { margin-top: 34.44vw; }
 	.sec_kv .txt_con .tit p { font-size: 7.22vw; }
 	.sec_kv .txt_con .tit h2 { margin-top: 1.39vw; font-size: 16.67vw; }
@@ -198,9 +198,9 @@
 	.sec_kv .txt_con .btn_con { display: -webkit-box; display: -ms-flexbox; display: flex; bottom: 8.33vw; padding: 0 4.17vw; width: calc(100% - 11.11vw); }
 	.sec_kv .txt_con .btn_con li + li { margin-left: 2.64vw; }
 	.sec_kv .txt_con .btn_con li a { height: 21.67vw; background-size: 100% auto; border-radius: 6.94vw; -webkit-box-shadow: 0.28vw 0.28vw 1.53vw rgba(0, 0, 0, 0.5); box-shadow: 0.28vw 0.28vw 1.53vw rgba(0, 0, 0, 0.5); }
-	.sec_kv .txt_con .btn_con li.appStore a { background-image: url("/assets/img/mo_btn_appstore.png"); }
+	.sec_kv .txt_con .btn_con li.appStore a { background-image: url("../img/mo_btn_appstore.png"); }
 	.sec_kv .txt_con .btn_con li.playStore { display: none; }
-	.sec_kv .txt_con .btn_con li.playStore a { background-image: url("/assets/img/mo_btn_playstore.png"); }
+	.sec_kv .txt_con .btn_con li.playStore a { background-image: url("../img/mo_btn_playstore.png"); }
 	.sec_kv .img_con { position: absolute; top: 80.56vw; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); margin-top: 1.39vw; width: 95%; }
 	.sec_01 { padding: 22.22vw 0 6.11vw; }
 	.sec_01 .info { margin-top: 8.33vw; }
