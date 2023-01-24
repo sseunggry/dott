@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* ====================================================================== */
+/* [Web Font]
+/* ====================================================================== */
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('/assets/fonts/NotoSansCJKkr-Regular.otf') format('OpenType');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    src: url('/assets/fonts/NotoSansCJKkr-Bold.otf') format('OpenType');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Trade Gothic LH';
+    src: url('/assets/fonts/Trade Gothic LH Extended Bold.otf') format('OpenType');
+    font-weight: 700;
+    font-style: normal;
+}

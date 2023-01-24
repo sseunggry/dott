@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+@import "import/lib-fonts";
+@import "base";
+@import "import/typography";
+@import "import/reset-css";
+
+/* clearfix */
+.clearfix{
+	*zoom:1;
+	&:before, &:after{
+		content:'';
+		display:block;
+	}
+	&:after{
+		clear:both;
+	}
+}
+
+/* hidden */
+.hidden {
+    display: none;
+    overflow: hidden;
+    border: 0;
+    position: relative;
+    z-index: -1;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+}
+
+img {
+    width: 100%;
+}
+
+.f-right{float: right;}
+.f-left{float: left;}
+
+.po-r{position: relative;}
+.po-a{position: absolute;}
+
+.ov-h{overflow: hidden;}
+
+.ta-center{text-align: center !important;}
+.ta-left{text-align: left !important;}
+
+.line_01{overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.pc_only{display: block;}
+.mo_only{display: none;}
+
+.tradeGothic{font-family: "Trade Gothic LH", sans-serif;}
+
+/* space */
+$position: (t:top, b:bottom, r:right, l: left);
+$total: 10;
+
+@each $abbr, $pos in $position {
+  @for $i from 0 to $total {
+    .m#{$abbr}-#{$i} {margin-#{$pos}: $i*10px !important;}
+    .p#{$abbr}-#{$i} {padding-#{$pos}: $i*10px !important;}
+  }
+}
+
+@media all and (max-width:720px){
+  .pc_only{display: none;}
+  .mo_only{display: block;}
+
+    /* space */
+    $position: (t:top, b:bottom, r:right, l: left);
+    $total: 10;
+
+    @each $abbr, $pos in $position {
+    @for $i from 0 to $total {
+        .m#{$abbr}-#{$i} {margin-#{$pos}: $i*1.39vw !important;}
+        .p#{$abbr}-#{$i} {padding-#{$pos}: $i*1.39vw !important;}
+    }
+    }
+
+}
+
+//layout
+html[lang=ko-KR] body, html[lang=ko] body{word-break: keep-all; color: #22193a;}
+
+.inner{margin: 0 auto; width: 1110px;}
+
+.dot::after{content: ''; display: inline-block; margin-left: 14px; width: 16px; height: 16px; background: #ffcc00; border-radius: 50%;}
+.square::after{content: ''; display: inline-block; margin-left: 12px; width: 12px; height: 12px; background: #22193a; }
+
+.sec_tit h3{font-size: 60px; font-weight: 700;}
+.sec_tit p{margin-top: 34px; font-size: 18px; font-weight: 500;}
+.sub_txt{font-size: 32px; font-weight: 700;}
+
+@media all and (max-width:1200px){
+  .inner{padding: 0 40px; width: 100%;}
+}
+
+@media all and (max-width: 720px){
+  .inner{padding: 0 5.56vw;}
+
+  .dot::after{margin-left: 1.94vw; width: 3.33vw; height: 3.33vw;}
+  .square::after{margin-left: 1.67vw; width: 3.33vw; height: 3.33vw;}
+
+  .sec_tit h3{font-size: 8.89vw; line-height: 1.2;}
+  .sec_tit p{margin-top: 6.94vw; padding: 0 2.78vw; font-size: 3.89vw;}
+  .sub_txt{font-size: 5.56vw;}
+}
